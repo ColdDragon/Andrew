@@ -16,8 +16,10 @@ echo "make archive"
 ./all_sl.sh
 
 echo "make so"
-./create.sh
+./createso.sh
 
+rm -f ../EngineSO/POConvertLibrary/pomsg.log
 echo "run application"
 ./runApp.sh
 
+cat ../EngineSO/POConvertLibrary/pomsg.log
